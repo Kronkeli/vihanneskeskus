@@ -1,0 +1,26 @@
+$primary-color: #679966;
+$secondary-color: #ffff66;
+$background-opacity: 0.9;
+
+@mixin easeOut {
+    transition: all 0.3s ease-out;
+}
+
+@mixin background {
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+// Set text color
+@function set-text-color($color) {
+    @if (lightness($color) > 40 ) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}

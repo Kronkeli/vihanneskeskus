@@ -1,0 +1,23 @@
+{
+  "name": "vihanneskeskus",
+  "version": "1.0.0",
+  "description": "Website for Vihanneskeskus",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kronkeli/vihanneskeskus.git"
+  },
+  "author": "Samu Salko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kronkeli/vihanneskeskus/issues"
+  },
+  "homepage": "https://github.com/Kronkeli/vihanneskeskus#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
