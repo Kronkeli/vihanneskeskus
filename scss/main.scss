@@ -7,7 +7,12 @@
 
 body {
     @include background;
+    background-color: $primary-color;
     color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
 // Headings
@@ -18,6 +23,7 @@ h3 {
     font-weight: 400;
 
     &.lg-heading {
+        // text-align: center;
         font-size: 6rem;
     }
 
@@ -27,5 +33,35 @@ h3 {
         font-weight: 400;
         font-size: 3rem;
         // background: rgba( lighten($primary-color, 2) , $background-opacity);
+    }
+} 
+
+main {
+    padding: 4rem;
+    min-height: calc(100vh-60vh);
+    margin-top: 20vh;
+    // align-items: stretch;
+
+    * {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 0;
+
+        text-align: justify;
+    }
+
+    &#home {
+        display:flex;
+        justify-content: center;
+        padding-right: 15%;
+        padding-left: 15%;
+
+        .h3.sm-heading {
+            padding-top: 0;
+        }
+
+        .logo {
+            width: 100px;
+        }
     }
 }

@@ -3,8 +3,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity:  0.9;
-    display: flex;
+    opacity:  $background-opacity;
+    // display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
@@ -20,15 +20,18 @@
     }
 
     .menu-nav {
+        
         display: flex;
         flex-flow: row;
+        width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: stretch;
         float: left;
         margin: 0;
         padding: 0;
         background: darken($primary-color, $amount: 5);
         list-style: none;
+
         @include easeOut;
     }
     
