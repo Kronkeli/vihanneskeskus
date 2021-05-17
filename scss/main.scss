@@ -50,15 +50,20 @@ main {
         text-align: justify;
     }
 
+    .content {
+        opacity: 0.6;
+        background-color: lighten($primary-color, $amount: 40);
+        color: set-text-color(#fff);
+        div {
+            padding: 2rem;
+        }
+    }
+
     &#home {
         display:flex;
         justify-content: center;
         padding-right: 15%;
         padding-left: 15%;
-
-        .h3.sm-heading {
-            padding-top: 0;
-        }
 
         .logo {
             width: 100px;
