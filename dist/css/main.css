@@ -52,7 +52,6 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #679966;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -69,8 +68,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
-      background: rgba(103, 153, 102, 0.8); }
+      z-index: -1; }
 
 h1,
 h2,
@@ -98,7 +96,7 @@ main {
     margin-top: 0;
     text-align: justify; }
   main .content {
-    opacity: 0.6;
+    opacity: 0.9;
     background-color: #e1ebe0;
     color: #000; }
     main .content div {

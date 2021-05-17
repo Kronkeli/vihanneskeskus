@@ -7,7 +7,7 @@
 
 body {
     @include background;
-    background-color: $primary-color;
+    // background-color: $primary-color;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -51,7 +51,7 @@ main {
     }
 
     .content {
-        opacity: 0.6;
+        opacity: 0.9;
         background-color: lighten($primary-color, $amount: 40);
         color: set-text-color(#fff);
         div {
