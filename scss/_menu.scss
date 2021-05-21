@@ -1,16 +1,74 @@
+// Menu Button
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    visibility: hidden;
+
+    &:hover {
+        .btn-line {
+            background-color: $secondary-color;
+            @include easeOut();
+        }
+    }
+
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: set-text-color($primary-color);
+        @include easeOut;
+    }
+
+    // Rotate Into X With Menu Lines
+    &.close {
+        transform: rotate(360deg);
+
+        .btn-line {
+            // Line 1 - Rotate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            // Line 2 - Hide
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            // Line 3 - Rotate
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
+    }
+}
+
+input {
+    display: none;
+    // visibility: hidden;
+}
+
+
 .menu {
 
     position: fixed;
     top: 0;
     width: 100%;
     opacity:  $background-opacity;
-    // display: flex;
+    display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
     float: left;
     margin: 0;
     padding: 0;
+    z-index: 2;
+    // transform:  translate3d(0, -100%, 0);
+    @include easeOut;
+    
+    &.show {
+        transform: translate3d(0,0,0);
+    }
 
     .logo {
         width: 170px;
@@ -32,7 +90,7 @@
         
         list-style: none;
 
-        @include easeOut;
+        // @include easeOut;
     }
 
     #company-name {
@@ -44,7 +102,7 @@
     }
     
     .nav-item {
-        @include easeOut;
+        // @include easeOut;
 
         &.current > a {
             color: $secondary-color;
@@ -61,7 +119,7 @@
         font-weight: 300;
         color: set-text-color($primary-color);
         text-decoration: none;
-        @include easeOut;
+        // @include easeOut;
 
         &:hover {
             color: $secondary-color;

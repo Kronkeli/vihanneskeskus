@@ -1,14 +1,47 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  visibility: hidden; }
+  .menu-btn:hover .btn-line {
+    background-color: #ffff66;
+    transition: all 0.3s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.3s ease-out; }
+  .menu-btn.close {
+    transform: rotate(360deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+input {
+  display: none; }
+
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.8;
+  display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
   float: left;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 2;
+  transition: all 0.3s ease-out; }
+  .menu.show {
+    transform: translate3d(0, 0, 0); }
   .menu .logo {
     width: 170px;
     height: 199px;
@@ -22,18 +55,15 @@
     margin: 0;
     padding: 0;
     background: #486b47;
-    list-style: none;
-    transition: all 0.3s ease-out; }
+    list-style: none; }
   .menu #company-name {
     height: 17vh;
     align-content: center;
     border-style: dotted;
     border-width: 0px 5px 0px 0px;
     border-color: #000; }
-  .menu .nav-item {
-    transition: all 0.3s ease-out; }
-    .menu .nav-item.current > a {
-      color: #ffff66; }
+  .menu .nav-item.current > a {
+    color: #ffff66; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -43,8 +73,7 @@
     margin-left: 1rem;
     font-weight: 300;
     color: #fff;
-    text-decoration: none;
-    transition: all 0.3s ease-out; }
+    text-decoration: none; }
     .menu .nav-link:hover {
       color: #ffff66; }
 
@@ -101,6 +130,9 @@ main {
     color: #000; }
     main .content div {
       padding: 2rem; }
+  main .page-images {
+    display: flex;
+    flex-flow: column; }
   main#home {
     display: flex;
     justify-content: center;
@@ -108,3 +140,41 @@ main {
     padding-left: 15%; }
     main#home .logo {
       width: 100px; }
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem;
+    margin-top: 10vh; }
+    main#home {
+      flex-flow: column;
+      padding-right: 2%;
+      padding-left: 2%; }
+    main .page-images {
+      flex-flow: row;
+      justify-content: center;
+      padding: 2rem; }
+  .menu-btn {
+    visibility: visible; }
+  .menu {
+    transform: translate3d(0, -100%, 0);
+    opacity: 1; }
+    .menu .logo {
+      height: 0;
+      visibility: hidden; }
+    .menu #company-name {
+      border-style: none;
+      height: inherit;
+      margin-bottom: 1rem;
+      text-align: center; }
+    .menu .menu-nav {
+      flex-flow: column; }
+    .menu .nav-item {
+      width: 100%;
+      border-style: solid;
+      border-color: #000;
+      border-width: 0px 0px 1px 0px;
+      justify-content: center; }
+    .menu .nav-link {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem; } }

@@ -14,12 +14,22 @@
 
     <header>
 
+        <label for="toggleMenu">
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </label>
+
+        <input id='toggleMenu' type='checkbox' />
+
         <nav class="menu">
 
             <ui class="menu-nav">
                 <div class="logo"></div>
                 <div id="company-name">
-                    <h3 class="sm-heading">Euran <br> Vihanneskeskus</h3>
+                    <h1 class="sm-heading">Euran <br> Vihanneskeskus</h1>
                 </div>
                 <li class="nav-item">
                     <a href="../index.html" class="nav-link">
@@ -58,13 +68,13 @@
 
 <main id="home">
 
-    <div>
+    <div class="page-images">
         <img src="./img/yht1.jpg" alt="pork1.jpg">
         <img src="./img/yht2.jpg" alt="por2.jpg">
     </div>
 
     <div>
-        <h1 class="sm-heading">Yhteystiedot</h1>
+        <h2 class="sm-heading">Yhteystiedot</h2>
 
         Myynti ja markkinointi <br>
         Toimitusjohtaja Jorma Uotila <br>
@@ -83,7 +93,7 @@
 
     </div>
 
-    <div>
+    <div class="page-images">
         <img src="./img/tuote4.jpg" alt="kaali1.jpg">
         <img src="./img/yht4.jpg" alt="tuote4.jpg" height="115" width="100">
         <img class="logo" src="./img/logo.jpg" alt="logo">
@@ -93,5 +103,7 @@
 
 
 </main>
+
+<script src="dist/js/main.js"></script>
 
 </html>

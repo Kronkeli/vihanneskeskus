@@ -59,6 +59,11 @@ main {
         }
     }
 
+    .page-images {
+        display: flex;
+        flex-flow: column;
+    }
+
     &#home {
         display:flex;
         justify-content: center;
@@ -70,3 +75,5 @@ main {
         }
     }
 }
+
+@import 'mobile';

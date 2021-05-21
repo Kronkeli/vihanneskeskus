@@ -14,12 +14,22 @@
 
     <header>
 
+        <label for="toggleMenu">
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </label>
+
+        <input id='toggleMenu' type='checkbox' />
+
         <nav class="menu">
 
             <ui class="menu-nav">
                 <div class="logo"></div>
                 <div id="company-name">
-                    <h3 class="sm-heading">Euran <br> Vihanneskeskus</h3>
+                    <h1 class="sm-heading">Euran <br> Vihanneskeskus</h1>
                 </div>
                 <li class="nav-item current">
                     <a href="index.html" class="nav-link">
@@ -58,13 +68,13 @@
 
 <main id="home">
 
-    <div>
+    <div class="page-images">
         <img src="./dist/img/pork1.jpg" alt="pork1.jpg">
         <img src="./dist/img/pork2.jpg" alt="por2.jpg">
     </div>
 
     <div class="content">
-        <h1 class="sm-heading">Yritys</h1>
+        <h2 class="sm-heading">Yritys</h2>
 
         <div>
             Euran Vihanneskeskus Oy on vuonna 1993 perustettu viljelijöiden omistama vihannestukkuliike, joka markkinoi
@@ -82,7 +92,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="page-images">
         <img src="./dist/img/kaali1.jpg" alt="kaali1.jpg">
         <img src="./dist/img/tuote4.jpg" alt="tuote4.jpg">
         <img class="logo" src="./dist/img/logo.jpg" alt="logo">
@@ -92,5 +102,7 @@
 
 
 </main>
+
+<script src="dist/js/main.js"></script>
 
 </html>

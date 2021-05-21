@@ -14,12 +14,22 @@
 
     <header>
 
+        <label for="toggleMenu">
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </label>
+
+        <input id='toggleMenu' type='checkbox' />
+
         <nav class="menu">
 
             <ui class="menu-nav">
                 <div class="logo"></div>
                 <div id="company-name">
-                    <h3 class="sm-heading">Euran <br> Vihanneskeskus</h3>
+                    <h1 class="sm-heading">Euran <br> Vihanneskeskus</h1>
                 </div>
                 <li class="nav-item">
                     <a href="../index.html" class="nav-link">
@@ -58,13 +68,13 @@
 
 <main id="home">
 
-    <div>
+    <div class="page-images">
         <img src="./img/mansikka1.jpg" alt="pork1.jpg">
         <img src="./img/mansikka2.jpg" alt="por2.jpg">
     </div>
 
     <div>
-        <h1 class="sm-heading">Viljelijät</h1>
+        <h2 class="sm-heading">Viljelijät</h2>
 
         Sopimusviljelijämme ovat perheviljelmiä, joista useimmilla on monien vuosien kokemus vihannesviljelystä.
         Ammattitaitoaan viljelijät ylläpitävät osallistumalla säännöllisesti koulutuksiin ja seminaareihin sekä
@@ -80,7 +90,7 @@
         korkealaatuiset ja tuoreet tuotteet.
     </div>
 
-    <div>
+    <div class="page-images">
         <img src="./img/turv3.jpg" alt="kaali1.jpg">
         <img src="./img/pork1.jpg" alt="tuote4.jpg" height="115" width="100">
         <img class="logo" src="./img/logo.jpg" alt="logo">
@@ -90,5 +100,7 @@
 
 
 </main>
+
+<script src="dist/js/main.js"></script>
 
 </html>
