@@ -1,4 +1,25 @@
 
+ // Desktops & Laptops
+@include mediaLg {
+    
+    h1,
+    h2,
+    h3 {
+        &.lg-heading {
+            font-size: 4rem;
+        }
+        &.sm-heading {
+            font-size: 2rem;
+        }
+    }
+    .menu {
+        transform: translate(0, -100%, 0);
+
+        .nav-link {
+            font-size: 1.5rem;
+        }
+    }
+}
 // Smartphones
 @include mediaSm {
     main {
@@ -56,7 +77,4 @@
             font-size: 1.5rem;
         }
     }
-
-    
-
 }
