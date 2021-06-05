@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+// Specifying header layout for front page
+#front-page {
+    position: sticky;
+    top: 0;
+    // margin-top: 60vh;
+    // margin-bottom: 10vh;
+    z-index: 3;
+}
+
 body {
     @include background;
     // background-color: $primary-color;
@@ -24,23 +33,20 @@ h3 {
 
     &.lg-heading {
         // text-align: center;
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     &.sm-heading {
         // margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 2rem;
         // background: rgba( lighten($primary-color, 2) , $background-opacity);
     }
 } 
 
 main {
     padding: 4rem;
-    min-height: calc(100vh-60vh);
-    margin-top: 20vh;
-    // align-items: stretch;
 
     * {
         margin-right: 2rem;
@@ -64,16 +70,82 @@ main {
         flex-flow: column;
     }
 
-    &#home {
+    &#page {
         display:flex;
-        justify-content: center;
-        padding-right: 15%;
-        padding-left: 15%;
-
-        .logo {
-            width: 100px;
-        }
+        
     }
+
+    &#home {
+        display: flex;
+        // justify-content: center;
+        flex-flow: column;
+
+        .title {
+            width: 100%;
+            padding: 1rem;
+            font-size: 4rem;
+            margin-top: 10vh;
+            text-align: center;
+        }
+
+        // Sections to display image and text on main page
+        .section-left {
+            // margin-top: 10vh;
+            position: relative;
+            img {
+                width: 60vw;
+                height: 30vw;
+                margin: 0;
+                z-index: 1;
+            }
+            
+            .description {
+                position: absolute;
+                left: 30vw;
+                top: 5vw;
+                height: 20vw;
+                z-index: 2;
+                background-color: $secondary-color;
+                color: set-text-color($secondary-color);
+                padding: 2rem;
+                opacity: calc(#{$background-opacity} + 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .section-right {
+
+            // margin-top: 10vh;
+            position: relative;
+            height: 30vw;
+            img {
+                width: 60vw;
+                height: 30vw;
+                position: absolute;
+                right: 0;
+                margin: 0;
+                z-index: 1;
+            }
+            
+            .description {
+                position: absolute;
+                right: 30vw;
+                top: 5vw;
+                height: 20vw;
+                z-index: 2;
+                background-color: $secondary-color;
+                color: set-text-color($secondary-color);
+                padding: 2rem;
+                opacity: calc(#{$background-opacity} + 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    }
+
 }
 
 @import 'mobile';
