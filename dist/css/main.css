@@ -192,11 +192,13 @@ main#home .title {
 }
 
 main#home .section-left {
+  margin-left: 10%;
+  margin-right: 10%;
   position: relative;
 }
 
 main#home .section-left img {
-  width: 60vw;
+  width: 50vw;
   height: 30vw;
   margin: 0;
   z-index: 1;
@@ -218,12 +220,14 @@ main#home .section-left .description {
 }
 
 main#home .section-right {
+  margin-left: 10%;
+  margin-right: 10%;
   position: relative;
   height: 30vw;
 }
 
 main#home .section-right img {
-  width: 60vw;
+  width: 50vw;
   height: 30vw;
   position: absolute;
   right: 0;
@@ -244,25 +248,6 @@ main#home .section-right .description {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 4rem;
-  }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    font-size: 2rem;
-  }
-  .menu {
-    transform: translate(0, -100%, 0);
-  }
-  .menu .nav-link {
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -311,5 +296,69 @@ main#home .section-right .description {
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 4rem;
+  }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 1.5rem;
+  }
+  .menu {
+    transform: translate(0, -100%, 0);
+  }
+  .menu .nav-link {
+    font-size: 1rem;
+  }
+  main#home .title {
+    font-size: 3rem;
+  }
+  main#home .section-left {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    height: 25vw;
+  }
+  main#home .section-left img {
+    position: absolute;
+    width: 30vw;
+    height: 25vw;
+    left: 0;
+  }
+  main#home .section-left .description {
+    margin: 0;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    top: 0;
+    left: 35vw;
+    padding: 1rem;
+  }
+  main#home .section-right {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    height: 25vw;
+  }
+  main#home .section-right img {
+    position: absolute;
+    width: 30vw;
+    height: 25vw;
+    left: 55vw;
+  }
+  main#home .section-right .description {
+    margin: 0;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 1rem;
   }
 }

@@ -90,10 +90,11 @@ main {
 
         // Sections to display image and text on main page
         .section-left {
-            // margin-top: 10vh;
+            margin-left: 10%;
+            margin-right: 10%;
             position: relative;
             img {
-                width: 60vw;
+                width: 50vw;
                 height: 30vw;
                 margin: 0;
                 z-index: 1;
@@ -115,12 +116,12 @@ main {
             }
         }
         .section-right {
-
-            // margin-top: 10vh;
+            margin-left: 10%;
+            margin-right: 10%;
             position: relative;
             height: 30vw;
             img {
-                width: 60vw;
+                width: 50vw;
                 height: 30vw;
                 position: absolute;
                 right: 0;

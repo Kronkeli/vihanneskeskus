@@ -1,25 +1,4 @@
 
- // Desktops & Laptops
-@include mediaLg {
-    
-    h1,
-    h2,
-    h3 {
-        &.lg-heading {
-            font-size: 4rem;
-        }
-        &.sm-heading {
-            font-size: 2rem;
-        }
-    }
-    .menu {
-        transform: translate(0, -100%, 0);
-
-        .nav-link {
-            font-size: 1.5rem;
-        }
-    }
-}
 // Smartphones
 @include mediaSm {
     main {
@@ -75,6 +54,92 @@
             width: 100%;
             text-align: center;
             font-size: 1.5rem;
+        }
+    }
+}
+
+ // Desktops & Laptops
+ @include mediaLg {
+    
+    h1,
+    h2,
+    h3 {
+        &.lg-heading {
+            font-size: 4rem;
+        }
+        &.sm-heading {
+            font-size: 1.5rem;
+        }
+    }
+
+    .menu {
+        transform: translate(0, -100%, 0);
+
+        .nav-link {
+            font-size: 1rem;
+        }
+    }
+
+    main {
+
+        // Front page
+        &#home {
+
+            .title {
+                font-size: 3rem;
+            }
+
+            .section-left {
+                display: flex;
+                // align-items: center;
+                margin-left: 0;
+                margin-right: 0;
+                height: 25vw;
+
+                img {
+                    position: absolute;
+                    width: 30vw;
+                    height: 25vw;
+                    left: 0;
+                }
+                .description {
+                    // width: 40%;
+                    // height: auto;
+                    margin: 0;
+                    position: relative;
+                    width: 50vw;
+                    height: auto;
+                    top: 0;
+                    left: 35vw;
+                    padding: 1rem;
+                }
+            }
+
+            .section-right {
+                display: flex;
+                // align-items: center;
+                margin-left: 0;
+                margin-right: 0;
+                height: 25vw;
+
+                img {
+                    position: absolute;
+                    width: 30vw;
+                    height: 25vw;
+                    left: 55vw;
+                }
+                .description {
+                    // width: 40%;
+                    // height: auto;
+                    margin: 0;
+                    position: relative;
+                    width: 50vw;
+                    height: auto;
+                    top: 0;
+                    left: 0;
+                    padding: 1rem;
+                }
+            }
         }
     }
 }
