@@ -8,7 +8,7 @@
 }
 
 .menu-btn:hover .btn-line {
-  background-color: #ffff66;
+  background-color: #ffff4d;
   transition: all 0.3s ease-out;
 }
 
@@ -70,14 +70,14 @@ input {
 }
 
 .menu #company-name {
-  background-color: #ffff66;
+  background-color: #ffff4d;
   color: #000;
   opacity: 1;
   font-size: 2rem;
 }
 
 .menu .nav-item.current > a {
-  color: #ffff66;
+  color: #ffff4d;
 }
 
 .menu .nav-link {
@@ -87,10 +87,11 @@ input {
   font-weight: 300;
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease-out;
 }
 
 .menu .nav-link:hover {
-  color: #ffff66;
+  color: #ffff4d;
 }
 
 * {
@@ -210,7 +211,7 @@ main#home .section-left .description {
   top: 5vw;
   height: 20vw;
   z-index: 2;
-  background-color: #ffff66;
+  background-color: #ffff4d;
   color: #000;
   padding: 2rem;
   opacity: calc(0.8 + 0.1);
@@ -241,7 +242,7 @@ main#home .section-right .description {
   top: 5vw;
   height: 20vw;
   z-index: 2;
-  background-color: #ffff66;
+  background-color: #ffff4d;
   color: #000;
   padding: 2rem;
   opacity: calc(0.8 + 0.1);

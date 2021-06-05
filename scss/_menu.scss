@@ -95,7 +95,6 @@ input {
     }
     
     .nav-item {
-        // @include easeOut;
 
         &.current > a {
             color: $secondary-color;
@@ -109,7 +108,7 @@ input {
         font-weight: 300;
         color: set-text-color($primary-color);
         text-decoration: none;
-        // @include easeOut;
+        @include easeOut;
 
         &:hover {
             color: $secondary-color;
